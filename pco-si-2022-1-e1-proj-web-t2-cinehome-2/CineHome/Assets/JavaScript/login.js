@@ -3,7 +3,7 @@ URL = 'https://api-cinehome.herokuapp.com/usuarios';
 
 
 function fazerLogin() {
-    location.href = "http://127.0.0.1:5500/TelaPrincipal.html";
+    location.href = "http://127.0.0.1:5500/index.html";
 }
 
 //Constantes que pegam os elementos inseridos no cadastro
