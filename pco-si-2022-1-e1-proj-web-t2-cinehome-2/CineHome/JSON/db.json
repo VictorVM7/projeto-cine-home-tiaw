@@ -1,0 +1,44 @@
+{
+  "usuarios": [
+    {
+      "email": "cinehome@cinehome.br",
+      "senha": "123456",
+      "id": 1
+    },
+    {
+      "email": "victormagalhaes@hotmail.com",
+      "senha": "1234567",
+      "id": 2
+    }
+  ],
+  "filmes": [
+    {
+      "nome": "Morbius",
+      "Categoria": "Ação",
+      "Indicação:": 14,
+      "Duração": 95,
+      "id": 1
+    },
+    {
+      "nome": "Animais Fantásticos: Os Segredos de Dumbledore",
+      "Categoria": "Fantasia",
+      "Indicação:": 12,
+      "Duração": 102,
+      "id": 2
+    },
+    {
+      "nome": "Matrix",
+      "Categoria": "Ação/Ficção",
+      "Indicação:": 16,
+      "Duração": 98,
+      "id": 3
+    },
+    {
+      "nome": "Doutor Estranho",
+      "Categoria": "Ação",
+      "Indicação:": 14,
+      "Duração": 119,
+      "id": 4
+    }
+  ]
+}

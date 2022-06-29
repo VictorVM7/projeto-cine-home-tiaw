@@ -1,0 +1,299 @@
+@import "Global-Styles.css";
+
+/* MENU/CABEÇALHO */
+
+.container-fluid{
+	background-color: var(--MarromEscuro);
+}
+
+.navbar{
+	background-color: var(--MarromEscuro);
+	display: flex;
+	align-items: center;
+}
+
+.navbar a{
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.navbar a:hover{
+	color: #fff;
+	opacity: 0.7;
+}
+
+.navbar-toggler{
+	border-color: #fff;
+}
+
+.navbar-nav{
+	list-style: none;
+	display: flex;
+}
+
+.navbar-nav	 li{
+	letter-spacing: 3px;
+	margin-left: 32px;
+}
+
+/* CAROUSEL */
+
+#carouselExampleCaptions .carousel-caption{
+    top: 30%;
+}
+
+#carouselExampleCaptions .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#carouselExampleCaptions .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+@media (max-width:495px){
+    #carouselExampleCaptions .carousel-inner, #carouselExampleCaptions .carousel-item{
+        height: 28vh;
+    }
+} 
+
+@media(min-width:992){
+	#carouselExampleCaptions .carousel-inner , #carouselExampleCaptions .carousel-item{
+    height: 80vh;
+}  
+} 
+
+/* EM CARTAZ ---- BOX */
+
+.emcartaz{
+	margin-bottom: 40px;
+}
+
+.title-area{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	align-items: center;
+}
+
+.title-area h1{
+	color: var(--LaranjaForte);
+}
+
+.container{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 30px;
+}
+
+.box-area{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+	width: 48vh;
+	height: 100vh;
+	background-color: var(--MarromEscuro-Dark);
+	border-radius: 10px;
+	box-shadow: 2px 10px 12px rgba(0, 0, 0,0.5);
+	cursor: pointer;
+}
+
+@media (max-width:1199px){
+	.box{
+		width: 35vh;
+		height: 85vh;
+	}
+}
+
+@media (max-width:991px){
+	.box{
+		width: 30vh;
+		height: 72vh;
+	}
+}
+
+@media (max-width:767px){
+	.box{
+		width: 40vh;
+		height: 88vh;
+	}
+}
+
+.col{
+	display: flex;
+	justify-content: center;
+}
+
+.model{
+	max-height: 100%;
+	max-width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	mix-blend-mode: screen;
+	-webkit-mask-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,black),color-stop(0.35,black),color-stop(0.5,black),color-stop(0.65,black),
+	color-stop(0.85,rgba(0,0,0,0.6)),color-stop(1,transparent));
+}
+
+.movie-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.movie-info .title-movie{
+	font-size: 2rem;
+	color: var(--LaranjaForte);
+}
+
+.movie-info .title-movie span{
+	font-size: 1.5rem;
+}
+
+.movie-info .genres-movie{
+	font-size: 0.8rem;
+	color: var(--GreyVariant);
+	margin-top: -20px;
+}
+
+.movie-info .movie-text{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.movie-info .movie-text p:nth-child(1){
+	font-size: 1rem;
+	color: white;
+}
+
+.movie-info .likes{
+	font-size: 1rem;
+	color: var(--LaranjaForte);
+}
+
+.movie-info .likes span{
+	margin-left: 10px;
+}
+
+.movie-info .summary{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: justify;
+	margin: 5px 0;
+}
+
+.movie-info .launch{
+	font-size: 00.8rem;
+	color: var(--GreyVariant);
+	margin-bottom: 5px;
+}
+
+.item-a li{
+	margin-left: 10px;
+}
+
+
+/*BOX DE FILME DA API DE FILMES*/
+/*MAIN*/
+.emcartaz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*CARTAO DO FILME*/
+.movie-card {
+    width: 300px;
+    margin: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px;
+    background-color: var(--MarromEscuro-Dark);
+    position: relative;
+    overflow: hidden;
+}
+
+/*IMAGEM DE DO CARTAO DO FILME*/
+.movie-card img {
+    width: 100%;
+}
+
+/*INFORMACOES (titulo e nota do filme)*/
+.movie-card .informacoes-filme {
+    color: var(--GreyVariant);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+/*NOTA DO FILME EM INFORMACOES*/
+.movie-card .informacoes-filme span {
+    background-color: var(--MarromEscuro);
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+/*REVIEW DO FILME COM TRANSIÇÕES DE CARTÃO*/
+.movie-card .review-filme {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--MarromEscuro);
+    color: var(--LaranjaForte);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.4s ease-in;
+}
+
+/*DIV BOTÃO VER MAIS DENTRO DO REVIEW DO CARTÃO DE FILMES*/
+.movie-card .review-filme .div-btn-vermais {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border: none;
+	text-decoration: underline;
+	color: var(--GreyVariant);
+}
+
+/*DIV BOTÃO VER MAIS DENTRO DO REVIEW DO CARTÃO DE FILMES*/
+.movie-card .review-filme .div-btn-vermais a {
+    color: var(--GreyVariant);
+    text-decoration: none;
+}
+
+/*BOTAO VER MAIS DENTRO DO REVIEW DE FILMES*/
+.movie-card .review-filme .btn-vermais {
+    background-color: var(--amareloPrimario);
+    color: var(--verdePrincipal);
+    border: none;
+    padding: 0.25rem 0.50rem;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+/*REVIEW DE FILMES QUANDO O MOUSE PASSA EM CIMA (animaçâo de aparecer)*/
+.movie-card:hover .review-filme {
+    transform: translateY(0);
+}
